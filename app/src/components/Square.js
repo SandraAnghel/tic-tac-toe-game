@@ -5,10 +5,7 @@ export default class Square extends React.Component {
     render() {
         console.log(this.props);
         return (
-            <button className="square" onClick={
-                function () {
-                    console.log('click');
-                }}>
+            <button className="square" onClick={() => console.log('click') }>
                 {this.props.value}
             </button>
         );
